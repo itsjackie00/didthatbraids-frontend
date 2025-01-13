@@ -1,10 +1,4 @@
 <template>
-    <header class="flowing-container">
-        <div class="flowing-div">
-            🔥 Prenotazione online 💰 20% di sconto
-        </div>
-    </header>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand py-2 col-7" href="#">
             <img src="../img/logo.png" alt="Your Logo" id="logo">
@@ -67,41 +61,7 @@ export default {
     width: 100px;
 }
 
-.flowing-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    /* Adjust height as needed */
-    background-color: #B4A79E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flowing-div {
-    overflow: hidden;
-    white-space: nowrap;
-    /* Prevent line breaks */
-    animation: scroll-left 35s linear infinite;
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 .navbar {
-    position: fixed;
-    top: 30px;
-    /* Adjust top position based on flowing-container height */
-    left: 0;
     width: 100%;
     background-color: #000000;
     color: white;
