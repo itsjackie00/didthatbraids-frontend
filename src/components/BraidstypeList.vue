@@ -1,21 +1,33 @@
 <template>
     <div class="braids container-fluid">
-        <div class="braidstype-list mt-3">
+        <div class="braidstype-list pt-5 text-center">
             <h1>Tipi di treccine</h1>
-            <p>Scopri i nostri tipi di treccine!</p>
         </div>
         <BraidsCard />
+    </div>
+    <div id="preparations">
+        <PreparationsGuide />
     </div>
 </template>
 
 <script>
 import BraidsCard from './cards/BraidsCard.vue';
+import PreparationsGuide from './guides/PreparationsGuide.vue';
 
 export default {
     components: {
         BraidsCard,
+        PreparationsGuide
     }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.braids {
+    background-color: black;
+    color: white;
+}
+#preparations{
+    background-color: cadetblue;
+}
+</style>
