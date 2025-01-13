@@ -57,10 +57,7 @@
   
   <style scoped>
   .carousel {
-    position: fixed;
-    top: 150px;
-    left: 0;
-    width: 100%;
+    margin-top: 120px;
     background-color: blue;
     text-align: center;
     overflow: hidden;
