@@ -1,13 +1,23 @@
 <template>
-    <div class="preparations-guide container mt-5">
+    <div class="preparations-guide container pt-5 pb-5">
         <hr />
       <div class="text-center mb-4">
-        <h2 class="font-primary text-primary">Preparations Guide</h2>
+        <h2 class="font-primary ">Preparations Guide</h2>
         <p class="text-muted">Segui questi semplici passaggi per prepararti al tuo appuntamento.</p>
       </div>
       <div class="row align-items-center">
+        <!-- Animazione e immagine interattiva -->
+        <div class="col-md-3 mb-4 text-center">
+            <div class="image-container position-relative">
+              <img
+                src="https://media0.giphy.com/media/t0AJF1JhZdjji/giphy.gif?cid=6c09b952alce3vorxg4r8o4rt9bqcypol6nwk85mh6w0tno8&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="Hair Preparation"
+                class="img-fluid rounded shadow animate-image gif"
+              />
+            </div>
+          </div>
         <!-- Testo guida -->
-        <div class="col-md-6 mb-4">
+        <div class="col-md-5 mb-4">
           <ul class="list-group list-group-flush">
             <li class="list-group-item d-flex align-items-start">
               <i class="fas fa-shower text-primary me-3"></i>
@@ -28,7 +38,7 @@
           </ul>
         </div>
         <!-- Animazione e immagine interattiva -->
-        <div class="col-md-6 mb-4 text-center">
+        <div class="col-md-4 mb-4 text-center">
           <div class="image-container position-relative">
             <img
               src="https://media0.giphy.com/media/1wXcVnkfnEYciO7KXP/giphy.gif?cid=6c09b952rh4kj4vlswwo9uatg5ne5edyrh3gd3m4h14d34jv&ep=v1_gifs_search&rid=giphy.gif&ct=g"
@@ -37,14 +47,14 @@
             />
             <!-- <div class="floating-icons">
               <i class="fas fa-scissors text-primary"></i>
-              <i class="fas fa-comb text-warning"></i>
-              <i class="fas fa-shampoo text-success"></i>
+              <i class="fas fa-scissors text-primary"></i>
             </div> -->
           </div>
         </div>
       </div>
       <hr>
     </div>
+
   </template>
   
   <script>
@@ -63,6 +73,9 @@
   
   .font-primary {
     font-weight: 600;
+  }
+  h2{
+    color: white;
   }
   
   /* Lista stile */
@@ -95,9 +108,9 @@
   }
   
   /* Icone fluttuanti */
-  /* .floating-icons {
+  .floating-icons {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -109,10 +122,10 @@
   .floating-icons i {
     font-size: 2rem;
     animation: spin 4s infinite linear;
-  } */
+  }
    .gif{
     height: 50%;
-    width: 30%;
+    width: 50%;
    }
   
   /* Animazioni */
