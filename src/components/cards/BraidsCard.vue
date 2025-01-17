@@ -1,42 +1,44 @@
 <template>
-    <div class="container mt-5">
-      <div class="row g-4">
-        <div
-          class="col-sm-6 col-md-4 col-lg-3"
-          v-for="(braid, index) in braids"
-          :key="index"
-        >
-          <div class="card h-100 shadow-sm rounded-circle-card">
-            <div class="image-container">
-              <img
-                :src="braid.image"
-                class="card-img-top"
-                :alt="braid.type"
-              />
-              <div class="overlay">
-                <div class="overlay-content">
-                  <p class="overlay-text">{{ braid.description }}</p>
-                  <p class="overlay-text">
-                    <strong>Price:</strong> €{{ braid.price }}
-                  </p>
-                  <p class="overlay-text">
-                    <strong>Duration:</strong> {{ braid.duration }} hours
-                  </p>
-                </div>
+  <div class="container mt-5">
+    <div class="row g-4">
+      <div
+        class="col-sm-6 col-md-4 col-lg-3"
+        v-for="(braid, index) in braids"
+        :key="index"
+      >
+        <div class="card h-100 shadow-sm rounded-circle-card">
+          <div class="image-container">
+            <img
+              :src="braid.image"
+              class="card-img-top"
+              :alt="braid.type"
+            />
+            <div class="overlay">
+              <div class="overlay-content">
+                <p class="overlay-text">{{ braid.description }}</p>
+                <p class="overlay-text">
+                  <strong>{{ t('priceLabel') }}:</strong> €{{ braid.price }}
+                </p>
+                <p class="overlay-text">
+                  <strong>{{ t('durationLabel') }}:</strong> {{ braid.duration }} {{ t('hours') }}
+                </p>
               </div>
             </div>
-            <div class="card-body text-center">
-              <h5 class="card-title font-primary">{{ braid.type }}</h5>
-              <a href="#" class="btn btn-primary btn-sm mt-2">Book Now</a>
-            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title font-primary">{{ braid.type }}</h5>
+            <a href="#" class="btn btn-primary btn-sm mt-2">{{ t('bookNow') }}</a>
           </div>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script>
   import { braidsData } from "../../data";
+  import { useI18n } from "vue-i18n";
   
   export default {
     name: "BraidsCard",
@@ -45,8 +47,13 @@
         braids: braidsData,
       };
     },
+    setup() {
+      const { t } = useI18n(); // Access the translation function
+      return { t };
+    },
   };
   </script>
+  
   
   <style scoped>
   /* Google Font */
@@ -58,7 +65,7 @@
   
   /* Card styling */
   .card {
-    border: transparent;
+    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     position: relative;

@@ -14,6 +14,11 @@ const messages = {
     search: {
       placeholder: 'Search...',
     },
+    braidstypestitle: 'Braids Types',
+    priceLabel: 'Price',
+    durationLabel: 'Duration',
+    hours: 'hours',
+    bookNow: 'Book Now',
   },
   it: {
     navbarTitle: 'Did That Braids',
@@ -25,8 +30,14 @@ const messages = {
       calendar: 'Calendario',
       blog: 'Blog',
     },
+    braidstypestitle: 'Tipi di trecce',
+    priceLabel: 'Prezzo',
+    durationLabel: 'Durata',
+    hours: 'ore',
+    bookNow: 'Prenota Ora',
   },
 };
+
 
 const i18n = createI18n({
   legacy: false,
