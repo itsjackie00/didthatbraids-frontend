@@ -7,7 +7,7 @@
       <!-- Controls with d-flex -->
       <div class="controls mt-2 mb-2">
         <!-- Progress Bar -->
-        <div class="progress-bar mb-3">
+        <div class="progress-bar">
           <div class="progress" :style="{ width: progressPercentage + '%' }"></div>
         </div>
         <button @click="prevImage">❮</button>
