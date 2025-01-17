@@ -24,6 +24,13 @@ const messages = {
     locs: "Locs",
     twists: "Twists",
     crotchet: "Crotchet",
+    preparations: {
+      title: 'Preparations Guide',
+      description: 'Follow these simple steps to prepare for your appointment.',
+      step1: 'Wash your hair the day before using only shampoo, avoiding conditioner or extra treatments.',
+      step2: 'Come with your hair natural. Avoid using a straightener or other styling tools.',
+      step3: 'Make sure to arrive on time for your appointment to avoid delays.',
+    },
   },
   it: {
     navbarTitle: 'Did That Braids',
@@ -45,6 +52,13 @@ const messages = {
     locs: "Dreadlocks",
     twists: "Twist",
     crotchet: "Crotchet",
+    preparations: {
+      title: 'Guida alle Preparazioni',
+      description: 'Segui questi semplici passaggi per prepararti al tuo appuntamento.',
+      step1: 'Lava i capelli il giorno prima utilizzando solo shampoo, evitando balsamo o trattamenti extra.',
+      step2: 'Vieni con i capelli al naturale. Evita piastra o altri strumenti per lo styling.',
+      step3: 'Assicurati di arrivare in orario per il tuo appuntamento per evitare ritardi.',
+    },
   },
 };
 
