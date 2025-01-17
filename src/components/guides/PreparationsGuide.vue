@@ -1,51 +1,31 @@
 <template>
-  <div class="preparations-guide container pt-5 pb-5">
-    <hr />
-    <div class="text-center mb-4">
-      <h2 class="font-primary">{{ $t('preparations.title') }}</h2>
-      <p class="text-muted">{{ $t('preparations.description') }}</p>
-    </div>
-    <div class="row align-items-center">
-      <!-- Animazione e immagine interattiva -->
-      <div class="col-md-3 mb-4 text-center">
-        <div class="image-container position-relative">
-          <img
-            src="https://media0.giphy.com/media/t0AJF1JhZdjji/giphy.gif?cid=6c09b952alce3vorxg4r8o4rt9bqcypol6nwk85mh6w0tno8&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-            alt="Hair Preparation"
-            class="img-fluid rounded shadow animate-image gif"
-          />
-        </div>
+  <section>
+    <div class="preparations-guide container pb-5">
+      <div class="text-center mb-4">
+        <h2 class="font-primary mb-3">{{ $t('preparations.title') }}</h2>
+        <p class="text-muted mb-5">{{ $t('preparations.description') }}</p>
       </div>
-      <!-- Testo guida -->
-      <div class="col-md-5 mb-4">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex align-items-start">
-            <i class="fas fa-shower text-primary me-3"></i>
-            <span>{{ $t('preparations.step1') }}</span>
-          </li>
-          <li class="list-group-item d-flex align-items-start">
-            <i class="fas fa-hair-dryer text-primary me-3"></i>
-            <span>{{ $t('preparations.step2') }}</span>
-          </li>
-          <li class="list-group-item d-flex align-items-start">
-            <i class="fas fa-calendar-check text-primary me-3"></i>
-            <span>{{ $t('preparations.step3') }}</span>
-          </li>
-        </ul>
-      </div>
-      <!-- Animazione e immagine interattiva -->
-      <div class="col-md-4 mb-4 text-center">
-        <div class="image-container position-relative">
-          <img
-            src="https://media0.giphy.com/media/1wXcVnkfnEYciO7KXP/giphy.gif?cid=6c09b952rh4kj4vlswwo9uatg5ne5edyrh3gd3m4h14d34jv&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-            alt="Hair Preparation"
-            class="img-fluid rounded shadow animate-image gif"
-          />
+      <div class=" align-items-center">
+        <!-- Testo guida -->
+        <div class="w-75 m-auto">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-start">
+              <i class="fas fa-shower text-primary me-3"></i>
+              <span>{{ $t('preparations.step1') }}</span>
+            </li>
+            <li class="list-group-item d-flex align-items-start">
+              <i class="fas fa-hair-dryer text-primary me-3"></i>
+              <span>{{ $t('preparations.step2') }}</span>
+            </li>
+            <li class="list-group-item d-flex align-items-start">
+              <i class="fas fa-calendar-check text-primary me-3"></i>
+              <span>{{ $t('preparations.step3') }}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <hr />
-  </div>
+  </section>
 </template>
 
 <script>
