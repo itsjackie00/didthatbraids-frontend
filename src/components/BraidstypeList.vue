@@ -1,7 +1,7 @@
 <template>
     <div class="braids container-fluid mt-5 mb-5">
       <div class="braidstype-list pt-5 text-center ">
-        <h1>Tipi di treccine</h1>
+        <h1>{{ $t('braidstypestitle') }}</h1>
       </div>
       <BraidsCard />
     </div>
