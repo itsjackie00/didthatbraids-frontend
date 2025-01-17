@@ -1,6 +1,6 @@
 <template>
-    <div class="braids container-fluid">
-      <div class="braidstype-list pt-5 text-center">
+    <div class="braids container-fluid mt-5 mb-5">
+      <div class="braidstype-list pt-5 text-center ">
         <h1>Tipi di treccine</h1>
       </div>
       <BraidsCard />
@@ -46,9 +46,11 @@ import AppointmentPrep from './guides/AppointmentPrep.vue';
   </script>
 
 <style scoped>
-.braids {
-    background-color: #3f352c;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito+Sans:ital,opsz,wdth,wght@1,6..12,125,300&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Knewave&family=Nunito+Sans:ital,opsz,wdth,wght@1,6..12,125,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.braids{
+  font-family: 'Playfair Display', serif;
 }
 
 #preparations {
