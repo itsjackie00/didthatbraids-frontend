@@ -19,6 +19,11 @@ const messages = {
     durationLabel: 'Duration',
     hours: 'hours',
     bookNow: 'Book Now',
+    all: "All",
+    braids: "Braids",
+    locs: "Locs",
+    twists: "Twists",
+    crotchet: "Crotchet",
   },
   it: {
     navbarTitle: 'Did That Braids',
@@ -35,6 +40,11 @@ const messages = {
     durationLabel: 'Durata',
     hours: 'ore',
     bookNow: 'Prenota Ora',
+    all: "Tutti",
+    braids: "Treccine",
+    locs: "Dreadlocks",
+    twists: "Twist",
+    crotchet: "Crotchet",
   },
 };
 
